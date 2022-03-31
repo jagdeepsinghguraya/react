@@ -1,0 +1,74 @@
+.hero {
+  z-index: 999;
+}
+.hero h3 {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.hero h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.hero h1 span {
+  color: #ff014f;
+}
+.hero h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff014f;
+}
+.hero h2 span {
+  color: black;
+}
+.hero p {
+  color: #878e99;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.hero_btn h4 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #43474b;
+  font-size: 15px;
+  margin: 30px 0 30px 0;
+}
+.hero_btn a {
+  margin-right: 30px;
+}
+.hero_btn i {
+  font-size: 20px;
+}
+.hero .left {
+  margin-right: 10%;
+}
+.hero .right {
+  width: 40%;
+  position: relative;
+}
+.hero .right_img img {
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  height: 600px;
+  width: 480px;
+  border-radius: 10px;
+  transition: 0.5s all ease;
+}
+.hero .right_img img:hover{
+  transform: translateY(-10px);
+}
+@media (max-width: 768px) {
+  .hero .right,
+  .hero .left {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .hero .f_flex {
+    flex-direction: column;
+  }
+  .hero .right_img img{
+    width: 320px;
+    height: 400px;
+  }
+}

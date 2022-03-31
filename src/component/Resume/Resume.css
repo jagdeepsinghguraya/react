@@ -1,0 +1,243 @@
+.Resume .content {
+  max-width: 85%;
+  margin: auto;
+}
+.Resume .box {
+  padding: 40px;
+}
+.Resume .rate .btn_shadow {
+  color: #ff014f;
+  padding: 15px 30px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.Resume .box {
+  margin-bottom: 40px;
+  position: relative;
+}
+.Resume .btn_shadow:hover {
+  transform: translate(0);
+}
+.Resume .box:hover .btn_shadow {
+  background: #ff3a75;
+  box-shadow: none;
+  color: white;
+}
+.Resume .content-section {
+  position: relative;
+}
+.Resume .left {
+  position: relative;
+}
+.Resume .left::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 5px;
+  background: #d9dee2;
+  z-index: -2;
+}
+.Resume .box::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  left: -8%;
+  height: 5px;
+  width: 50px;
+  background: #d9dee2;
+}
+.Resume .box::before {
+  content: "";
+  position: absolute;
+  top: 5.5%;
+  left: -10%;
+  height: 18px;
+  width: 18px;
+  background: #fff;
+  border: 5px solid #d9dee2;
+  border-radius: 50%;
+  z-index: 5;
+  transition: 0.5s;
+}
+.mb30 {
+  margin-bottom: 60px;
+}
+.Resume .box:hover.box:before {
+  background: #ff3a75;
+}
+.content-section.d_flex .h2 {
+  font-size: 35px;
+}
+@media (max-width: 768px) {
+  .Resume .d_flex {
+    flex-direction: column;
+  }
+  .Resume .left::after {
+    top: 14%;
+    height: 0;
+  }#resume .skills .content-section.d_flex .right  {
+    margin-top: 30px !important;
+    max-width: 100% !important ;
+    margin: auto;
+  }
+}
+
+
+
+
+
+/* new */
+.skills .left {
+  justify-content: center;
+}
+#resume .skills .content-section.d_flex .right h3{
+  text-align: center;
+}
+#resume .skills .content-section.d_flex .right{
+  max-width: 45%;
+  margin: auto;
+}
+
+#resume .skills .left .skills-bar {
+  width: 100%;
+  margin: auto;
+}
+
+#resume .skills .left .skills-bar .bar {
+  margin: 22px 0;
+}
+
+
+#resume .skills .left .skills-bar .bar .progress-line {
+  height: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 1px rgba(255, 255, 255, 1);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+#resume .skills .left .skills-bar .bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -7px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #ff014f;
+          animation: showText2 0.5s 1.5s linear forwards;
+}
+
+
+
+#resume .skills .left .skills-bar .bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  background: #ff014f;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 2px;
+          animation: showText2 0.5s 1.5s linear forwards;
+}
+.skills-bar.btn_shadow:hover{
+  background:#ffffff;
+  color: #ff014f;
+  transform: scale(0.98);
+}
+@-webkit-keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+
+.bar .progress-line.html span {
+  width: 90%;
+}
+.bar .progress-line.html span::after {
+  content: "90%";
+}
+.bar .progress-line.javascript span {
+  width: 75%;
+}
+.bar .progress-line.javascript span::after {
+  content: "75%";
+}
+.bar .progress-line.ds span {
+  width: 55%;
+}
+.bar .progress-line.ds span::after {
+  content: "55%";
+}
+.bar .progress-line.react span {
+  width: 20%;
+}
+.bar .progress-line.react span::after {
+  content: "20%";
+}
+.bar .progress-line.mysql span {
+  width: 70%;
+}
+.bar .progress-line.mysql span::after {
+  content: "70%";
+}
+.bar .info {
+  margin-bottom: 5px;
+}
+.bar .info span {
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@-webkit-keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  width: 80%;
+  background: #ff014f;
+  position: absolute;
+  border-radius: 10px;
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@-webkit-keyframes animate {
+  100% {
+            transform: scaleX(1);
+  }
+}
+@keyframes animate {
+  100% {
+            transform: scaleX(1);
+  }
+}
+
+#resume .skills .right .content {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#resume .skills  .right .content h4 {
+  margin: 0.8rem 0 0.2rem 0;
+}
+
+#resume .skills  .right .content p {
+  text-indent: 1rem;
+}
